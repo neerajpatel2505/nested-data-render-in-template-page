@@ -22,7 +22,11 @@ key1.name.1st.name = {{key1.name.1st.name}}
 key1.name.1st.age = {{key1.name.1st.age}} {% endcomment %}
 
 {% if key1 %}
-    {{key1}}
+    {% if key1.value == '10' %}
+        {{key1}}
+    {% else %}
+        Hello.........
+    {% endif %}
 {% elif key2 %}
     {{key2}}
 {% elif key3 %}
